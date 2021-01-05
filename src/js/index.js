@@ -171,7 +171,7 @@ const Game = {
         const mapHeight = GameMap.data.height * GameAssets.scale * GameAssets.size;
         
         if (height < 300) height = 300;
-        if (height > 600) height = 600;
+        if (height > 650) height = 650;
 
         canvas.width = width;
         canvas.height = height;

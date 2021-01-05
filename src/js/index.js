@@ -165,20 +165,22 @@ const Game = {
         await GameMap.init();
     },
     resize: async () => {
-        const main = document.querySelector("main");
-        const mainWidth = main.getBoundingClientRect().width;
-        const mainHeight = main.getBoundingClientRect().height;
+        let width = window.innerWidth;
+        let height = window.innerHeight;
         const mapWidth = GameMap.data.width * GameAssets.scale * GameAssets.size;
         const mapHeight = GameMap.data.height * GameAssets.scale * GameAssets.size;
+        
+        if (height < 300) height = 300;
+        if (height > 600) height = 600;
 
-        canvas.width = mainWidth;
-        canvas.height = mainHeight;
+        canvas.width = width;
+        canvas.height = height;
 
-        if (mapWidth > mainWidth) {
-            GameMap.viewX = (mapWidth - mainWidth) / 2;
+        if (mapWidth > width) {
+            GameMap.viewX = (mapWidth - width) / 2;
         }
-        if (mapHeight > mainHeight) {
-            GameMap.viewY = (mapHeight - mainHeight) / 2;
+        if (mapHeight > height) {
+            GameMap.viewY = (mapHeight - height) / 2;
         }
     },
     sync: async () => {

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 sudo docker image rm thebonejarmer/portfolio:website
 sudo docker rm thebonejarmer/portfolio:website
 sudo docker build -t thebonejarmer/portfolio:website .

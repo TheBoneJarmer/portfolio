@@ -4,7 +4,7 @@ FROM node AS base
 RUN npm install -g http-server
 
 # Copy the source files
-COPY ./src/ /app/
+COPY ./src/website/ /app/
 
 # Serve the website
 WORKDIR /app/

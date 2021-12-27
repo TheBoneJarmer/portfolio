@@ -24,7 +24,7 @@
 
   <!-- Comments -->
   <style name="def:comment"                 foreground="#19911b"/>
-  <style name="def:shebang"                 foreground="#204a87" bold="true"/>
+  <style name="def:shebang"                 foreground="#4e9a06" bold="true"/>
   <style name="def:doc-comment-element"     italic="true"/>
 
   <!-- Constants -->
@@ -46,8 +46,8 @@
   <style name="def:inline-code"             foreground="#3465a4"/>
   <style name="def:insertion"               underline="single"/>
   <style name="def:deletion"                strikethrough="true"/>
-  <style name="def:link-text"               foreground="#204a87"/>
-  <style name="def:link-symbol"             foreground="#204a87" bold="true"/>
+  <style name="def:link-text"               foreground="#4e9a06"/>
+  <style name="def:link-symbol"             foreground="#4e9a06" bold="true"/>
   <style name="def:link-destination"        italic="true" underline="single"/>
   <style name="def:heading"                 foreground="#4e9a06" bold="true"/>
   <style name="def:thematic-break"          foreground="#4e9a06" bold="true"/>

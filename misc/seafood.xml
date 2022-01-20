@@ -29,7 +29,7 @@
 
   <!-- Constants -->
   <style name="def:constant"                foreground="#ad7fa8"/>
-  <style name="def:special-char"            foreground="#5c3566"/>
+  <style name="def:special-char"            foreground="#ad7fa8"/>
 
   <!-- Identifiers -->
   <style name="def:identifier"              foreground="#188777"/>

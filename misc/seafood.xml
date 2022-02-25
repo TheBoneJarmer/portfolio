@@ -74,7 +74,7 @@
 
   <!-- Language specific -->
   <style name="diff:added-line"             foreground="#4e9a06"/>
-  <style name="diff:removed-line"           foreground="#5c3566"/>
+  <style name="diff:removed-line"           foreground="#188777"/>
   <style name="diff:changed-line"           use-style="def:preprocessor"/>
   <style name="diff:diff-file"              use-style="def:type"/>
   <style name="diff:location"               use-style="def:statement"/>
@@ -85,12 +85,12 @@
 
   <style name="js:built-in-constructor"     foreground="#4e9a06"/>
 
-  <style name="latex:display-math"          foreground="#5c3566"/>
+  <style name="latex:display-math"          foreground="#188777"/>
   <style name="latex:command"               foreground="#4e9a06" bold="true"/>
   <style name="latex:include"               use-style="def:preprocessor"/>
   <style name="latex:special-char"          use-style="def:constant"/>
 
-  <style name="sh:variable"                 foreground="#5c3566"/>
+  <style name="sh:variable"                 foreground="#188777"/>
   <style name="sh:variable-definition"      foreground="#4e9a06"/>
 
 </style-scheme>

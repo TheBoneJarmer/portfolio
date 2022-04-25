@@ -1,6 +1,7 @@
 const GameAssets = {
     map: null,
     monsters: null,
+    debug: null,
 
     scale: 3,
     size: 16,
@@ -11,7 +12,8 @@ const GameAssets = {
         }
 
         GameAssets.map = await AssetLoader.loadSprite("assets/map.png", 1, 1, 0, 0, GameAssets.scale, GameAssets.scale);
-        GameAssets.monsters = await AssetLoader.loadSprite("assets/monsters.png", 16, 11, 0, 0, GameAssets.scale, GameAssets.scale);
+        GameAssets.monsters = await AssetLoader.loadSprite("assets/monsters.png", 16, 24, 0, 0, GameAssets.scale, GameAssets.scale);
+        //GameAssets.debug = await AssetLoader.loadSprite("assets/debug.png", 1, 1, 0, 0, GameAssets.scale, GameAssets.scale);
     }
 }
 
@@ -23,6 +25,7 @@ const GameMap = {
     viewY: 0,
 
     init: async () => {
+        const indices = [15, 16, 18];
         const res = await fetch("assets/map-data.json").catch((err) => console.error(err));
 
         if (res.ok) {
@@ -31,11 +34,11 @@ const GameMap = {
             console.error("Unable to load map data");
         }
 
-        for (let i=0; i<15; i++) {
+        for (let i = 0; i < 15; i++) {
             let x = 0;
             let y = 0;
             let frameHor = 0;
-            let frameVert = Math.floor(Math.random() * 3);
+            let frameVert = indices[Math.floor(Math.random() * indices.length)];
             let direction = Math.floor(Math.random() * 4);
 
             // Generate a random location
@@ -60,19 +63,19 @@ const GameMap = {
         }
     },
     update: async () => {
-        for (let i=0; i<GameMap.monsters.length; i++) {
+        for (let i = 0; i < GameMap.monsters.length; i++) {
             const monster = GameMap.monsters[i];
             const speed = 0.025;
 
             if (monster.moveTimer <= 0) {
-                 const direction = Math.floor(Math.random() * 4);
-                 let goalx = monster.goalx;
-                 let goaly = monster.goaly;
+                const direction = Math.floor(Math.random() * 4);
+                let goalx = monster.goalx;
+                let goaly = monster.goaly;
 
-                if (direction == 0) goaly++;
-                if (direction == 1) goaly--;
-                if (direction == 2) goalx++;
-                if (direction == 3) goalx--;
+                if (direction === 0) goaly++;
+                if (direction === 1) goaly--;
+                if (direction === 2) goalx++;
+                if (direction === 3) goalx--;
 
                 if (!await GameMap.isblocked(goalx, goaly)) {
                     monster.direction = direction;
@@ -101,7 +104,7 @@ const GameMap = {
                 monster.y = monster.goaly;
             }
 
-            if (monster.x != monster.goalx || monster.y != monster.goaly) {
+            if (monster.x !== monster.goalx || monster.y !== monster.goaly) {
                 monster.frameTimer++;
 
                 if (monster.frameTimer > 10) {
@@ -118,7 +121,7 @@ const GameMap = {
     render: async () => {
         GameAssets.map.render(-GameMap.viewX, -GameMap.viewY, 0, 0, 0, 255, 255, 255, 255);
 
-        for (let i=0; i<GameMap.monsters.length; i++) {
+        for (let i = 0; i < GameMap.monsters.length; i++) {
             const monster = GameMap.monsters[i];
             const sprite = GameAssets.monsters;
 
@@ -132,27 +135,27 @@ const GameMap = {
     isblocked: async (x, y) => {
         const blocked = GameMap.data.blocked;
 
-        for (let i=0; i<blocked.length; i+=2) {
+        for (let i = 0; i < blocked.length; i += 2) {
             const blockedX = blocked[i + 0];
             const blockedY = blocked[i + 1];
 
-            if (blockedX == x && blockedY == y) {
+            if (blockedX === x && blockedY === y) {
                 return true;
             }
         }
 
-        for (let i=0; i<GameMap.monsters.length; i++) {
+        for (let i = 0; i < GameMap.monsters.length; i++) {
             const monster = GameMap.monsters[i];
 
-            if (monster.goalx == x && monster.goaly == y) {
+            if (monster.goalx === x && monster.goaly === y) {
                 return true;
             }
         }
 
-        if (x == GameMap.data.width) return true;
-        if (y == GameMap.data.height) return true;
-        if (x == -1) return true;
-        if ( y == -1) return true;
+        if (x === GameMap.data.width) return true;
+        if (y === GameMap.data.height) return true;
+        if (x === -1) return true;
+        if (y === -1) return true;
 
         return false;
     }
@@ -169,7 +172,7 @@ const Game = {
         let height = window.innerHeight;
         const mapWidth = GameMap.data.width * GameAssets.scale * GameAssets.size;
         const mapHeight = GameMap.data.height * GameAssets.scale * GameAssets.size;
-        
+
         if (height < 300) height = 300;
         if (height > 650) height = 650;
 

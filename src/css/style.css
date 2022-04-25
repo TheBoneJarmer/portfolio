@@ -90,6 +90,19 @@ nav .header h1 {
     color: #fff;
 }
 
+nav.home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: none;
+}
+
+nav.home a {
+    color: #fff;
+}
+
 header {
     padding: 48px 20% 48px 20%;
     display: flex;
@@ -315,17 +328,7 @@ hr {
 }
 @font-face {
     font-family: 'HK Grotesk';
-    font-weight: bolder;
-    src: url('../fonts/HKGrotesk-Medium.ttf');
-}
-@font-face {
-    font-family: 'HK Grotesk';
     src: url('../fonts/HKGrotesk-Regular.ttf');
-}
-@font-face {
-    font-family: 'HK Grotesk';
-    font-weight: lighter;
-    src: url('../fonts/HKGrotesk-Light.ttf');
 }
 
 @media screen and (max-width: 1024px) {

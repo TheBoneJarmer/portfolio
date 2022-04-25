@@ -25,7 +25,7 @@ const GameMap = {
     viewY: 0,
 
     init: async () => {
-        const indices = [15, 16, 18];
+        const indices = [18, 15, 16];
         const res = await fetch("assets/map-data.json").catch((err) => console.error(err));
 
         if (res.ok) {
@@ -34,7 +34,7 @@ const GameMap = {
             console.error("Unable to load map data");
         }
 
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 20; i++) {
             let x = 0;
             let y = 0;
             let frameHor = 0;

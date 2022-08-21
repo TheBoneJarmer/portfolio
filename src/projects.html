@@ -48,9 +48,8 @@
                 <div class="project">
                     <h1>TiledCS</h1>
                     <p>
-                        A long time ago I needed to load my Tiled maps in my 2D OpenGL application I wrote in C#.
-                        However, due to the fact that existing Tiled map parser libraries were either heavily outdated or broken, I decided to create one of my own.
-                        Thus, as a result TiledCS was born. And as of today it is one of the most popular Tiled parser libraries out there for C#.
+                        A long time ago I started with a Tiled parser for C# because the existing alternatives were either broken or outdated. Once the library got stable I decided to go public with it and share it with an audience.
+                        And as of today TiledCS is one of the most popular Tiled parser libraries. Mostly used in combination with MonoGame or other .NET game frameworks and tools.
                     </p>
                     <div class="bottom">
                         <a href="https://github.com/TheBoneJarmer/TiledCS"><span class="fab fa-github"></span></a>
@@ -61,7 +60,7 @@
                     <h1>Arqanore</h1>
                     <p>
                         Arqanore is an 2D OpenGL game library written in c++ that aims at Linux gaming and Steam OS.
-                        This project is still a work in progress, but it works already for Linux desktop.
+                        This project is still a work in progress, but it works already for Ubuntu desktop.
                         I am also waiting for my SteamDeck, so I can finally port it officially and go public.
                     </p>
                     <div class="bottom">
@@ -73,7 +72,7 @@
                     <h1>ArqanoreJS</h1>
                     <p>
                         ArqanoreJS is as the name suggests a Node.js port of Arqanore.
-                        It uses the [Node Addon Api](https://github.com/nodejs/node-addon-api) to wrap the c++ classes into JavaScript objects.
+                        It uses the [Node Addon Api](https://github.com/nodejs/node-addon-api) to convert the c++ classes into JavaScript objects.
                     </p>
                     <div class="bottom">
                         T.B.A.
@@ -81,11 +80,21 @@
                 </div>
 
                 <div class="project">
+                    <h1>JArqanore</h1>
+                    <p>
+                        JArqanore is a Java port for Arqanore. I used JNI to form a bridge between c++ and Java in the form a wrapper library.
+                        This way the user can use native functionality directly.
+                    </p>
+                    <p class="bottom">
+                        T.B.A.
+                    </p>
+                </div>
+
+                <div class="project">
                     <h1>ArqanoreCS</h1>
                     <p>
                         ArqanoreCS is as the name suggests a C# port of Arqanore.
-                        Using pInvoke I import the functionality from Arqanore so the user can use all native functions directly.
-                        A difference here is that I had to write a wrapper class because pInvoke cannot handle c++ classes.
+                        Using pInvoke I imported the functionality from Arqanore so the user can use all native functions directly.
                     </p>
                     <div class="bottom">
                         T.B.A.
@@ -100,17 +109,6 @@
                     <p>
                         A basic CLI utility for Linux to retrieve a specific mangled symbol from a shared object by providing the demangled name.
                         I created this tool, so I could easier update my pInvoke commands in ArqanoreCS.
-                    </p>
-                    <div class="bottom">
-                        T.B.A.
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h1>JSMM</h1>
-                    <p>
-                        A temp name for now. It is a CLI tool for Linux that merges and minify javascript source files. It is not like WebPack, which is designed for web applications.
-                        I designed this tool because I needed to have something more specific to my use case.
                     </p>
                     <div class="bottom">
                         T.B.A.

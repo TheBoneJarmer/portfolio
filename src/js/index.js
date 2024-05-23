@@ -25,7 +25,7 @@ const GameMap = {
     viewY: 0,
 
     init: async () => {
-        const indices = [18, 15, 16];
+        const indices = [0, 4, 5,6,7,9,13,22];
         const res = await fetch("assets/map-data.json").catch((err) => console.error(err));
 
         if (res.ok) {
@@ -183,7 +183,7 @@ const Game = {
             GameMap.viewX = (mapWidth - width) / 2;
         }
         if (mapHeight > height) {
-            GameMap.viewY = (mapHeight - height) / 2;
+            GameMap.viewY = (mapHeight - height) / 2 - 128;
         }
     },
     sync: async () => {

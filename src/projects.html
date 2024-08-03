@@ -1,161 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Ruben Labruyere - Projects</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Ruben Labruyere" />
-        <meta name="description" content="Ruben Labruyere is a 30 year old indie game dev, software engineer and devops" />
-        <meta name="keywords" content="ruben, labruyere, devops, engineer, indie, game, developer" />
+<head>
+    <title>Ruben Labruyere - Projects</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Ruben Labruyere"/>
+    <meta name="description" content="Ruben Labruyere is a 30 year old indie game dev, software engineer and devops"/>
+    <meta name="keywords" content="ruben, labruyere, devops, engineer, indie, game, developer"/>
 
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/fontawesome.css" />
-        <link rel="canonical" href="https://rubenlabruyere.be" />
-        <link rel="canonical" href="https://www.rubenlabruyere.be" />
-    </head>
-    <body>
-        <nav>
-            <div class="header">
-                <a href="/"><h1>Ruben Labruyere</h1></a>
-            </div>
-            
-            <div class="menu">
-                <a href="about.html">About</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="mailto:info@rubenlabruyere.be">Contact</a>
-            </div>
-        </nav>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/fontawesome.css"/>
+    <link rel="canonical" href="https://rubenlabruyere.be"/>
+    <link rel="canonical" href="https://www.rubenlabruyere.be"/>
+</head>
+<body>
+<nav>
+    <div class="header">
+        <a href="/"><h1>Ruben Labruyere</h1></a>
+    </div>
 
-        <header>
-            <h1>Projects</h1>
-        </header>
+    <div class="menu">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="mailto:info@rubenlabruyere.be">Contact</a>
+    </div>
+</nav>
 
-        <main>
-            <!--
-            <h2>Games</h2>
-            <div class="container">
-                <div class="project">
-                    <h1>Reapenshaw</h1>
-                    <p>
-                        Reapenshaw is an upcoming 2D retro MMORPG for Windows, SteamDeck and Linux desktop. The story takes place on an island where you, the player, arrive as a soldier to help defend the island and defeat the evil forces that terrorise it. It is still very much in progress but an early demo version can be played already!
-                    </p>
-                    <div class="bottom">
-                        <a href="https://www.reapenshaw.com"><span class="fa fa-link"></span></a>
-                    </div>
-                </div>
-            </div>
-            -->
+<header>
+    <h1>Projects</h1>
+</header>
 
-            <h2>Libraries</h2>
-            <div class="container">
-                <div class="project">
-                    <h1>Arqanore</h1>
-                    <p>
-                        Arqanore is an 2D and 3D OpenGL game library written in c++ that aims at Linux gaming and Steam OS. This project is still a work in progress, but it already works on Windows, Linux Mint/Ubuntu desktop and Steamdeck.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://github.com/thebonejarmer/arqanore"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Tools</h2>
-            <div class="container">
-                <div class="project">
-                    <h1>MyGrator</h1>
-                    <p>
-                        MyGrator is a very basic CLI tool for Linux to perform database migrations on a MySQL database.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://mygrator.rubenlabruyere.be"><span class="fa fa-link"></span></a>
-                        <a href="https://github.com/thebonejarmer/mygrator"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            <h2>DevOps</h2>
-            <div class="container">
-                <div class="project">
-                    <h1>TeamCity</h1>
-                    <p>
-                        For automating builds and deployments I maintain a personal TeamCity server. This one runs at home and is used on daily basis to make my work easier.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://teamcity.rubenlabruyere.be"><span class="fa fa-link"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Stale</h2>
-            <div class="container">
-                <div class="project">
-                    <h1>JArqanore</h1>
-                    <p>
-                        JArqanore is a Java port for Arqanore. I used JNI to form a bridge between c++ and Java in the form a wrapper library.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://github.com/thebonejarmer/jarqanore"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h1>Arqanite</h1>
-                    <p>
-                        Arqanite is a game framework built on top of JArqanore. It combines the functionality provided in multiple useful classes that makes creating games a whole lot easier. Also, since JArqanore is a raw port of Arqanore, it helps you with automatic resource management too.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://github.com/thebonejarmer/arqanite"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-                
-                <div class="project">
-                    <h1>AdvancedSockets</h1>
-                    <p>
-                        AdvancedSockets is a C# library I created long time ago because I was in need of a solid websocket and http server that is not attached to ASP.net in any way. Later on I added an API client class, classes for http server and clients. But I stopped working on it because it was requiring too much maintenance at a point where I wanted to focus on other projects.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://github.com/TheBoneJarmer/AdvancedSockets"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h1>WebserverCS</h1>
-                    <p>
-                        Built on top of AdvancedSockets. Started out as a toy project, but it ended up to become something more serious and of better quality than I anticipated.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://github.com/TheBoneJarmer/WebserverCS"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h1>TiledCS</h1>
-                    <p>
-                        A long time ago I started with a Tiled parser for C# because the existing alternatives were either broken or outdated. Once the library got stable I decided to go public with it and share it with an audience. And as of today TiledCS is one of the most popular Tiled parser libraries. Mostly used in combination with MonoGame or other .NET game frameworks and tools.
-                    </p>
-                    <div class="bottom">
-                        <a href="https://github.com/TheBoneJarmer/TiledCS"><span class="fab fa-github"></span></a>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="top">           
-                <span>Social</span>
-                <div class="menu">
-                    <a href="https://github.com/TheBoneJarmer/"><span class="fab fa-github"></span></a>
-                    <a href="https://gitlab.com/TheBoneJarmer/"><span class="fab fa-gitlab"></span></a>
-                    <a href="https://www.linkedin.com/in/ruben-labruyere-302314204/"><span class="fab fa-linkedin"></span></a>
-                    <a href="https://thebonejarmer.itch.io/"><span class="fab fa-itch-io"></span></a>
-                    <a href="mailto:info@rubenlabruyere.be"><span class="fas fa-envelope"></span></a>
-                </div>
-            </div>
-
+<main>
+    <!--
+    <h2>Games</h2>
+    <div class="container">
+        <div class="project">
+            <h1>Reapenshaw</h1>
+            <p>
+                Reapenshaw is an upcoming 2D retro MMORPG for Windows, SteamDeck and Linux desktop. The story takes place on an island where you, the player, arrive as a soldier to help defend the island and defeat the evil forces that terrorise it. It is still very much in progress but an early demo version can be played already!
+            </p>
             <div class="bottom">
-                &copy; Copyright 2010 - 2024 Ruben Labruyere
+                <a href="https://www.reapenshaw.com"><span class="fa fa-link"></span></a>
             </div>
-        </footer>
-    </body>
+        </div>
+    </div>
+    -->
+
+    <h2>Libraries</h2>
+    <div class="container">
+        <div class="project">
+            <h1>Aquanore</h1>
+            <p>
+                Aquanore is a 2D WebGL game library I started with back in 2014. Back then it was not even using WebGL
+                but just mere 2D context from the HTML5 canvas element. But over time I learned OpenGL and WebGL and I
+                kept updating this library to what it is now.
+            </p>
+            <p>Unfortunately I have not been able to use it a lot in the past due to the performance drawbacks for web games where my projects needed more. But I have recently discovered web is much stronger than it was back then so performance is less of an issue now. Aquanore is still lacking docs and a good website but I firmly believe it can be a good library once it is finished.</p>
+            <div class="bottom">
+                <a href="https://github.com/thebonejarmer/aquanore"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h1>TiledCS</h1>
+            <p>
+                A long time ago I started with a Tiled parser for C# because the existing alternatives were either
+                broken or outdated. Once the library got stable I decided to go public with it and share it with an
+                audience. And as of today TiledCS is one of the most popular Tiled parser libraries. Mostly used in
+                combination with MonoGame or other .NET game frameworks and tools.
+            </p>
+            <p>
+                Due to a shift in interests and project requirements I don't use it or maintain it myself actively. Reason behind that is that most modern gaming frameworks ship their own parser nowadays so having a independent library is much less needed.
+            </p>
+            <div class="bottom">
+                <a href="https://github.com/TheBoneJarmer/TiledCS"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+        <div class="project">
+            <h1>Arqan</h1>
+            <p>
+                Arqan is a C# wrapper library for OpenGL and GLFW functionality. It performs pInvoke calls to call upon
+                native symbols. It was once created out of frustration with the existing alternatives but in the end I
+                never
+                used it that much because gamedev technology improved greatly since I started. Especially for web and
+                mobile.
+            </p>
+            <div class="bottom">
+                <a href="https://github.com/TheBoneJarmer/Arqan"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="container">
+        <div class="project">
+            <h1>Arqanore</h1>
+            <p>
+                Arqanore is an 2D and 3D OpenGL game library written in c++ that aims at Linux gaming and Steam OS. This project is still a work in progress, but it already works on Windows, Linux Mint/Ubuntu desktop and Steamdeck.
+            </p>
+            <div class="bottom">
+                <a href="https://github.com/thebonejarmer/arqanore"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <h2>Tools</h2>
+    <div class="container">
+        <div class="project">
+            <h1>MyGrator</h1>
+            <p>
+                MyGrator is a very basic CLI tool for Linux to perform database migrations on a MySQL database.
+            </p>
+            <div class="bottom">
+                <a href="https://mygrator.rubenlabruyere.be"><span class="fa fa-link"></span></a>
+                <a href="https://github.com/thebonejarmer/mygrator"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <h2>DevOps</h2>
+    <div class="container">
+        <div class="project">
+            <h1>TeamCity</h1>
+            <p>
+                For automating builds and deployments I maintain a personal TeamCity server. This one runs at home and
+                is used on daily basis to make my work easier.
+            </p>
+            <div class="bottom">
+                <a href="https://teamcity.rubenlabruyere.be"><span class="fa fa-link"></span></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="top">
+        <span>Social</span>
+        <div class="menu">
+            <a href="https://github.com/TheBoneJarmer/"><span class="fab fa-github"></span></a>
+            <a href="https://gitlab.com/TheBoneJarmer/"><span class="fab fa-gitlab"></span></a>
+            <a href="https://www.linkedin.com/in/ruben-labruyere-302314204/"><span class="fab fa-linkedin"></span></a>
+            <a href="https://thebonejarmer.itch.io/"><span class="fab fa-itch-io"></span></a>
+            <a href="mailto:info@rubenlabruyere.be"><span class="fas fa-envelope"></span></a>
+        </div>
+    </div>
+
+    <div class="bottom">
+        &copy; Copyright 2010 - 2024 Ruben Labruyere
+    </div>
+</footer>
+</body>
 </html>

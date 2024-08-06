@@ -1,7 +1,7 @@
 FROM node AS base
 
 # Install deps
-RUN npm install -g vite
+RUN npm install -g http-server
 
 # Copy the source files
 COPY ./dist/ /app/

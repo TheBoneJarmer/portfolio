@@ -1,10 +1,10 @@
 FROM node AS base
 
 # Install deps
-RUN npm install -g http-server
+RUN npm install -g vite
 
 # Copy the source files
-COPY ./src/ /app/
+COPY ./dist/ /app/
 
 # Serve the website
 WORKDIR /app/

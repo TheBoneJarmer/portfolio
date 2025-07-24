@@ -7,10 +7,12 @@
     font-size: 15pt;
     color: #ffffff;
 }
+
 html {
     width: 100%;
     height: 100%;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,30 +21,39 @@ body {
     background-color: #111;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0 0 16px 0;
     color: #1082af;
 }
+
 h1 {
     font-size: 2em;
 }
+
 h2 {
     font-size: 1.5em;
 }
+
 h3 {
     font-size: 1.25em;
     font-weight: bold;
 }
+
 a {
     color: #1082af;
     text-decoration: none;
 }
+
 a:visited {
     color: #1082af;
 }
+
 p {
     margin: 0 0 16px 0;
 }
+
 hr {
     margin: 16px 0 16px 0;
     border: 0;
@@ -57,12 +68,14 @@ nav {
     box-shadow: 0px 0px 5px 0px #000;
     background-color: #111;
 }
+
 nav .menu {
     display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: flex-end;
 }
+
 nav .menu a {
     text-decoration: none;
     text-transform: uppercase;
@@ -71,12 +84,15 @@ nav .menu a {
     margin: 0 16px;
     font-size: 0.9em;
 }
+
 nav .menu a:hover {
     color: #0aabeb;
 }
+
 nav .menu a.active {
     color: #0aabeb;
 }
+
 nav .header {
     display: flex;
     padding: 16px 0 16px 0;
@@ -84,6 +100,7 @@ nav .header {
     flex-direction: row;
     align-items: center;
 }
+
 nav .header h1 {
     margin: 0;
     font-size: 1.75em;
@@ -109,6 +126,7 @@ header {
     background-color: #222222;
     z-index: -1;
 }
+
 header h1 {
     margin: 0;
     font-size: 1.25em;
@@ -125,11 +143,13 @@ main {
     border-top: solid 1px #000;
     box-shadow: 0 -1px 5px 0 #000;
 }
+
 main article {
     margin: 0 0 32px 0;
     display: flex;
     flex-direction: column;
 }
+
 main article .header {
     display: flex;
     flex-direction: row;
@@ -137,12 +157,15 @@ main article .header {
     font-size: 18pt;
     font-weight: bolder;
 }
+
 main article .content {
     display: block;
 }
+
 main article .content p {
     margin: 0 0 16px 0;
 }
+
 main article .footer {
     margin: 8px 0 0 0;
     font-size: 0.8em;
@@ -154,9 +177,7 @@ main.home {
     padding: 0;
     display: flex;
 }
-main.home canvas {
-    z-index: -1;
-}
+
 main.home .intro {
     position: absolute;
     top: 0%;
@@ -169,11 +190,13 @@ main.home .intro {
     justify-content: center;
     padding: 32px;
 }
+
 main.home .intro h1 {
     margin-bottom: 32px;
     color: #ffffff;
     font-size: 3em;
 }
+
 main.home .intro p {
     margin: 0;
     color: #ffffff;
@@ -186,6 +209,7 @@ footer {
     flex-direction: column;
     width: 100%;
 }
+
 footer .top {
     padding: 48px;
     width: 100%;
@@ -195,26 +219,32 @@ footer .top {
     align-items: center;
     background-color: #111;
 }
+
 footer .top span {
     color: #ffffff;
     font-size: 1.75em;
     margin-bottom: 32px;
     font-weight: bolder;
 }
+
 footer .top p {
     color: #ffffff;
 }
+
 footer .top .menu {
     display: flex;
     flex-direction: row;
 }
+
 footer .top .menu a {
     padding: 0 16px 0 16px;
 }
+
 footer .top .menu a span {
     font-size: 32px;
     margin: 0;
 }
+
 footer .bottom {
     padding: 32px;
     display: flex;
@@ -231,7 +261,10 @@ form {
     flex-direction: column;
     width: 100%;
 }
-input, textarea, .button {
+
+input,
+textarea,
+.button {
     margin: 0 0 16px 0;
     display: block;
     padding: 8px;
@@ -242,13 +275,18 @@ input, textarea, .button {
     text-decoration: none;
     color: #222222;
 }
-input[type="submit"], .button {
+
+input[type="submit"],
+.button {
     background: linear-gradient(#eee, #ccc);
     text-align: center;
 }
-input[type="submit"]:active, .button:active {
+
+input[type="submit"]:active,
+.button:active {
     background: linear-gradient(#ccc, #aaa);
 }
+
 textarea {
     height: 96px;
 }
@@ -264,6 +302,8 @@ canvas {
     left: 0;
     top: 0;
     z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .noshadow {
@@ -294,9 +334,11 @@ canvas {
     flex-direction: column;
     max-width: 50%;
 }
+
 .project:nth-child(2n) {
     padding-right: 0;
 }
+
 .project h1 {
     background-color: #222;
     border-radius: 8px 8px 0 0;
@@ -304,19 +346,18 @@ canvas {
     margin: 0;
     font-size: 16pt;
 }
+
 .project p {
     background-color: #222;
     padding: 0px 24px 16px 24px;
     margin: 0;
     flex: 1;
 }
+
 .project .bottom {
     background-color: #2a2a2a;
     padding: 24px;
     border-radius: 0 0 8px 8px;
-}
-.project .bottom a {
-
 }
 
 .error {
@@ -333,6 +374,7 @@ canvas {
     font-weight: bold;
     src: url('../fonts/HKGrotesk-Bold.ttf');
 }
+
 @font-face {
     font-family: 'HK Grotesk';
     src: url('../fonts/HKGrotesk-Regular.ttf');
@@ -350,14 +392,17 @@ canvas {
         box-shadow: none;
         border: none;
     }
+
     nav .header {
         padding: 16px;
     }
+
     nav .menu {
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
     }
+
     nav .menu a {
         flex: 1;
         text-align: center;
@@ -367,7 +412,9 @@ canvas {
         background-color: #222;
         color: #ffffff;
     }
-    nav .menu a:active, nav .menu a:hover {
+
+    nav .menu a:active,
+    nav .menu a:hover {
         background-color: #0b6b91;
         color: #ffffff
     }
@@ -382,12 +429,11 @@ canvas {
         box-shadow: none;
         border: none;
     }
-    main.home .intro {
 
-    }
     main.home .intro h1 {
         font-size: 2em;
     }
+
     main.home .intro p {
         font-size: 1.25em;
     }
@@ -395,9 +441,11 @@ canvas {
     footer .top {
         padding: 32px;
     }
+
     footer .top span {
         margin-bottom: 16px;
     }
+
     footer .top .menu a span {
         font-size: 24px;
     }
@@ -411,6 +459,7 @@ canvas {
     #introduction {
         flex-direction: column;
     }
+
     #introduction img {
         width: 100%;
         margin-bottom: 16px;

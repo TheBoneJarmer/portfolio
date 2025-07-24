@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "target": "es6"
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node"
   },
-  "include": ["src/ts/*"]
+  "include": [
+    "src/ts/*"
+  ]
 }

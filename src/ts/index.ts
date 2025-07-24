@@ -1,46 +1,20 @@
-import {Aquanore, AquanoreOptions} from 'aquanore';
-import {GameAssets} from "./game-assets";
-import {GameMap} from "./game-map";
-import {SIZE} from "./globals";
+import { Lunanore, Scene, Scenes } from "lunanore";
 
-const options = new AquanoreOptions();
-options.autoResize = false;
+class SceneMain extends Scene {
+    public async init() {
 
-Aquanore.init(options);
-Aquanore.onLoad = async () => {
-    GameAssets.init();
-    await GameMap.init();
-};
-
-Aquanore.onUpdate = (dt: number) => {
-    GameMap.update(dt);
-}
-
-Aquanore.onRender = () => {
-    GameMap.render();
-}
-
-Aquanore.onResize = (width: number, height: number) => {
-    const map = GameMap.data;
-    const canvas = Aquanore.canvas;
-
-    if (!map) {
-        return;
     }
 
-    const mapWidth = map.width * SIZE;
-    const mapHeight = map.height * SIZE;
-
-    if (width > mapWidth) {
-        GameMap.viewX = (mapWidth - width) / 2.0;
+    public async update(dt: number) {
+        
     }
-
-    if (height > mapHeight) {
-        GameMap.viewY = (mapHeight - height) / 2.0;
-    }
-
-    canvas.width = width;
-    canvas.height = height;
 }
 
-Aquanore.run();
+const cnv = document.querySelector("canvas") as HTMLCanvasElement;
+
+Lunanore.init(cnv);
+
+Scenes.add("main", new SceneMain());
+Scenes.navigate("main");
+
+Lunanore.run();

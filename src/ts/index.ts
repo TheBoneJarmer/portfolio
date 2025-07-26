@@ -1,14 +1,5 @@
-import { Lunanore, Scene, Scenes } from "lunanore";
-
-class SceneMain extends Scene {
-    public async init() {
-
-    }
-
-    public async update(dt: number) {
-        
-    }
-}
+import { Lunanore, Scenes } from "lunanore";
+import { SceneMain } from "./scene-main";
 
 const cnv = document.querySelector("canvas") as HTMLCanvasElement;
 

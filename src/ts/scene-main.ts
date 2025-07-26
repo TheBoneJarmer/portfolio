@@ -5,7 +5,7 @@ export class SceneMain extends Scene {
     private _modelJelly: Model = null;
 
     public async init() {
-        this.scene.background = new THREE.Color("#0780a5");
+        this.scene.background = new THREE.Color("#163617");
     }
 
     public async update(dt: number) {

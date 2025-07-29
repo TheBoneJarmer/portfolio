@@ -222,7 +222,7 @@ footer .top {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #111;
+    /* background: #111; */
 }
 
 footer .top span {
@@ -258,7 +258,7 @@ footer .bottom {
     text-align: center;
     font-size: 0.9em;
     color: #ffffff;
-    background-color: #111
+    /* background-color: #111; */
 }
 
 form {

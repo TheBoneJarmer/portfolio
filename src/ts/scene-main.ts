@@ -6,7 +6,7 @@ export class SceneMain extends Scene {
 
     public async init() {
         // this.scene.background = new THREE.Color("#163617");
-        this.scene.background = new THREE.Color("#060c1a");
+        // this.scene.background = new THREE.Color("#060c1a");
     }
 
     public async update(dt: number) {

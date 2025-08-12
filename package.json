@@ -16,6 +16,6 @@
     "vite": "^5.3.5"
   },
   "dependencies": {
-    "lunanore": "^0.3.2"
+    "lunanore": "^0.6.1"
   }
 }

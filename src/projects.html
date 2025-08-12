@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Ruben Labruyere - Projects</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="Ruben Labruyere"/>
-    <meta name="description" content="Ruben Labruyere is a 31 year old indie game dev, software engineer and devops"/>
-    <meta name="keywords" content="ruben, labruyere, devops, engineer, indie, game, developer"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ruben Labruyere" />
+    <meta name="description" content="Ruben Labruyere is a 31 year old indie game dev, software engineer and devops" />
+    <meta name="keywords" content="ruben, labruyere, devops, engineer, indie, game, developer" />
 
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/fontawesome.css"/>
-    <link rel="canonical" href="https://rubenlabruyere.be"/>
-    <link rel="canonical" href="https://www.rubenlabruyere.be"/>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="canonical" href="https://rubenlabruyere.be" />
+    <link rel="canonical" href="https://www.rubenlabruyere.be" />
 </head>
+
 <body>
-<nav>
-    <div class="header">
-        <a href="/"><h1>Ruben Labruyere</h1></a>
-    </div>
+    <nav>
+        <div class="header">
+            <a href="/">
+                <h1>Ruben Labruyere</h1>
+            </a>
+        </div>
 
-    <div class="menu">
-        <a href="/about.html">About</a>
-        <a href="/skills.html">Skills</a>
-        <a href="/projects.html">Projects</a>
-        <a href="mailto:info@rubenlabruyere.be">Contact</a>
-    </div>
-</nav>
+        <div class="menu">
+            <a href="/about.html">About</a>
+            <a href="/skills.html">Skills</a>
+            <a href="/projects.html">Projects</a>
+            <a href="mailto:info@rubenlabruyere.be">Contact</a>
+        </div>
+    </nav>
 
-<header>
-    <h1>Projects</h1>
-</header>
+    <header>
+        <h1>Projects</h1>
+    </header>
 
-<main>
-    <!--
+    <main>
+        <!--
     <h2>Games</h2>
     <div class="container">
         <div class="project">
@@ -47,79 +51,145 @@
     </div>
     -->
 
-    <h2>Libraries</h2>
-    <div class="container">
-        <div class="project">
-            <h1>Aquanore</h1>
-            <p>
-                Aquanore is a 2D WebGL game library I started with back in 2014. Back then it was not even using WebGL
-                but just mere 2D context from the HTML5 canvas element. But over time I learned OpenGL and WebGL and I
-                kept updating this library to what it is now.
-            </p>
-            <p>Unfortunately I have not been able to use it a lot in the past due to the performance drawbacks for web games where my projects needed more. But I have recently discovered web is much stronger than it was back then so performance is less of an issue now. Aquanore is still lacking docs and a good website but I firmly believe it can be a good library once it is finished.</p>
-            <div class="bottom">
-                <a href="https://github.com/thebonejarmer/aquanore"><span class="fab fa-github"></span></a>
+        <h2>Websites</h2>
+        <div class="container">
+            <div class="project">
+                <h1>Barbet Joyeux</h1>
+                <p>
+                    Barbet Joyeux is the name of the dog breeder company my mother runs. Even though she has officialy
+                    retired, she is not the type to just sit still, lean back and just enjoy her retirement. She always
+                    had the dream to become an animal breeder and since she has retired she finally has the time to do
+                    so. But just like me she likes to be in control (guess where I got that trait from lol). This also
+                    became abundantly clear when we were discussing the setup.
+                </p>
+                <p>
+                    My mother insisted on having full control on the website's content and since she knows her way
+                    around
+                    with a computer pretty well we figured WordPress would be a good option. All we did (and by we I
+                    mean my super duper awesome BI specialist of a sister) was setup the website, gave it a template,
+                    customized it a bit and setup some pages. Everything else she does herself.</p>
+                </p>
+                <div class="bottom">
+                    <a href="https://www.barbetjoyeux.nl"><span class="fa fa-link"></span></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h1>JP Snacks</h1>
+                <p>
+                    My old neighbour runs a snack bar near our old appartment so obviously as part of my acclimatization
+                    process of becoming an obedient loyal Belgian citizen we go there every week. A year ago we were
+                    talking about digital visibility and it came to my attention he had no website yet. So in exchange
+                    for an evening of free fries I suggested to built him one.
+                </p>
+                <p>
+                    Personally I would have done a lot more but JP insisted to keep it simple and elegant, like himself
+                    really. It is the only Single Page Application I have so far and contains the absolute basic
+                    information about him and his business.
+                </p>
+                <div class="bottom">
+                    <a href="https://www.jpsnacks.be"><span class="fa fa-link"></span></a>
+                </div>
             </div>
         </div>
 
-        <div class="project">
-            <h1>TiledCS</h1>
-            <p>
-                A long time ago I started with a Tiled parser for C# because the existing alternatives were either
-                broken or outdated. Once the library got stable I decided to go public with it and share it with an
-                audience. And as of today TiledCS is one of the most popular Tiled parser libraries. Mostly used in
-                combination with MonoGame or other .NET game frameworks and tools.
-            </p>
-            <p>
-                Due to a shift in interests and project requirements I don't use it or maintain it myself actively. Reason behind that is that most modern gaming frameworks ship their own parser nowadays so having a independent library is much less needed.
-            </p>
-            <div class="bottom">
-                <a href="https://github.com/TheBoneJarmer/TiledCS"><span class="fab fa-github"></span></a>
-            </div>
-        </div>
-        <div class="project">
-            <h1>Arqan</h1>
-            <p>
-                Arqan is a C# wrapper library for OpenGL and GLFW functionality. It performs pInvoke calls to call upon
-                native symbols. It was once created out of frustration with the existing alternatives but in the end I
-                never
-                used it that much because gamedev technology improved greatly since I started. Especially for web and
-                mobile.
-            </p>
-            <div class="bottom">
-                <a href="https://github.com/TheBoneJarmer/Arqan"><span class="fab fa-github"></span></a>
-            </div>
-        </div>
-    </div>
-    <!--
-    <div class="container">
-        <div class="project">
-            <h1>Arqanore</h1>
-            <p>
-                Arqanore is an 2D and 3D OpenGL game library written in c++ that aims at Linux gaming and Steam OS. This project is still a work in progress, but it already works on Windows, Linux Mint/Ubuntu desktop and Steamdeck.
-            </p>
-            <div class="bottom">
-                <a href="https://github.com/thebonejarmer/arqanore"><span class="fab fa-github"></span></a>
-            </div>
-        </div>
-    </div>
-    -->
+        <h2>Libraries</h2>
+        <div class="container">
+            <div class="project">
+                <h1>Aquanore</h1>
+                <p>
+                    Aquanore is a 2D WebGL game library I started with back in 2014. Back then it was not even using WebGL but just mere 2D context from the HTML5 canvas element. But over time I learned OpenGL and WebGL and I kept updating this library to what it is now. It is the oldest project I still actively maintain to this day.
+                </p>
 
-    <h2>Tools</h2>
-    <div class="container">
-        <div class="project">
-            <h1>MyGrator</h1>
-            <p>
-                MyGrator is a very basic CLI tool for Linux to perform database migrations on a MySQL database.
-            </p>
-            <div class="bottom">
-                <a href="https://mygrator.rubenlabruyere.be"><span class="fa fa-link"></span></a>
-                <a href="https://github.com/thebonejarmer/mygrator"><span class="fab fa-github"></span></a>
+                <p>
+                    Unfortunately I have not been able to use it a lot in the past due to the performance drawbacks for web games where my projects needed more. But a a year or two ago I decided to look into it again and realized browsers can handle a lot more than they used to. Aquanore is still lacking docs and a good website but I firmly believe it can be a good library once it is finished.
+                </p>
+
+                <div class="bottom">
+                    <a href="https://github.com/thebonejarmer/aquanore"><span class="fab fa-github"></span></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h1>Lunanore</h1>
+                <p>
+                    Lunanore is a 3D WebGL game framework built on top of Three.JS. It extends Three with classes for mouse, keyboard and joystick input as well as a structure for getting a video game up and running real quick. Did you know the home page of this website uses Lunanore?
+                </p>
+                <p>
+                    Although Three is a very powerful library, its design is pretty generic. This may make it easy to end up with a chaotic structure for a game. On top of that, Three does not ship with input classes. This is why I created Lunanore. With this library you can setup a game project very easily and keep it clean while doing so.
+                </p>
+                <div class="bottom">
+                    <a href="https://github.com/thebonejarmer/lunanore"><span class="fab fa-github"></span></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h1>AEStar</h1>
+                <p>
+                    My attempt at an A* path finding algorithm library. I know there are a lot out there but I had a hard time finding a good, up-to-date one with support for TypeScript. Therefore at some point I decided to create my own one.
+                </p>
+
+                <div class="bottom">
+                    <a href="https://github.com/thebonejarmer/aestar"><span class="fab fa-github"></span></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h1>TiledCS</h1>
+                <p>
+                    A long time ago I started with a Tiled parser for C# because the existing alternatives were either
+                    broken or outdated. Once the library got stable I decided to go public with it and share it with an
+                    audience. And as of today TiledCS is one of the most popular Tiled parser libraries. Mostly used in
+                    combination with MonoGame or other .NET game frameworks and tools.
+                </p>
+                <p>
+                    Due to a shift in interests and project requirements I don't use it or maintain it myself actively.
+                    Reason behind that is that most modern gaming frameworks ship their own parser nowadays so having a
+                    independent library is much less needed.
+                </p>
+                <div class="bottom">
+                    <a href="https://github.com/TheBoneJarmer/TiledCS"><span class="fab fa-github"></span></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h1>Arqan</h1>
+                <p>
+                    Arqan is a C# wrapper library for OpenGL and GLFW functionality. It performs pInvoke calls to call upon native symbols. It was once created out of frustration with the existing alternatives but in the end I never used it that much because gamedev technology improved greatly since I started. Especially for web and mobile.
+                </p>
+                <div class="bottom">
+                    <a href="https://github.com/TheBoneJarmer/Arqan"><span class="fab fa-github"></span></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h1>Arqanore</h1>
+                <p>
+                    Arqanore is an 2D OpenGL game library written in c++ that aims at Linux gaming and Steam OS.
+                    This project is still a work in progress, but it already works on Windows, Linux Mint/Ubuntu desktop
+                    and Steamdeck.
+                </p>
+                <div class="bottom">
+                    <a href="https://github.com/thebonejarmer/arqanore"><span class="fab fa-github"></span></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--
+        <h2>Tools</h2>
+        <div class="container">
+            <div class="project">
+                <h1>MyGrator</h1>
+                <p>
+                    MyGrator is a very basic CLI tool for Linux to perform database migrations on a MySQL database.
+                </p>
+                <div class="bottom">
+                    <a href="https://mygrator.rubenlabruyere.be"><span class="fa fa-link"></span></a>
+                    <a href="https://github.com/thebonejarmer/mygrator"><span class="fab fa-github"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <!--
     <h2>DevOps</h2>
     <div class="container">
         <div class="project">
@@ -134,22 +204,24 @@
         </div>
     </div>
     -->
-</main>
+    </main>
 
-<footer>
-    <div class="top">
-        <span>Social</span>
-        <div class="menu">
-            <a href="https://github.com/TheBoneJarmer/"><span class="fab fa-github"></span></a>
-            <a href="https://www.linkedin.com/in/ruben-labruyere-302314204/"><span class="fab fa-linkedin"></span></a>
-            <a href="https://thebonejarmer.itch.io/"><span class="fab fa-itch-io"></span></a>
-            <a href="mailto:info@rubenlabruyere.be"><span class="fas fa-envelope"></span></a>
+    <footer>
+        <div class="top">
+            <span>Social</span>
+            <div class="menu">
+                <a href="https://github.com/TheBoneJarmer/"><span class="fab fa-github"></span></a>
+                <a href="https://www.linkedin.com/in/ruben-labruyere-302314204/"><span
+                        class="fab fa-linkedin"></span></a>
+                <a href="https://thebonejarmer.itch.io/"><span class="fab fa-itch-io"></span></a>
+                <a href="mailto:info@rubenlabruyere.be"><span class="fas fa-envelope"></span></a>
+            </div>
         </div>
-    </div>
 
-    <div class="bottom">
-        &copy; Copyright 2010 - 2026 Ruben Labruyere
-    </div>
-</footer>
+        <div class="bottom">
+            &copy; Copyright 2010 - 2026 Ruben Labruyere
+        </div>
+    </footer>
 </body>
+
 </html>

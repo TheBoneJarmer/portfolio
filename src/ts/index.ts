@@ -1,11 +1,17 @@
 import { Lunanore, Scenes } from "lunanore";
 import { SceneMain } from "./scene-main";
 
-const cnv = document.querySelector("canvas") as HTMLCanvasElement;
+window.addEventListener("load", () => {
+    const cnv = document.querySelector("canvas") as HTMLCanvasElement;
 
-Lunanore.init(cnv);
+    Lunanore.init(cnv);
 
-Scenes.add("main", new SceneMain());
-Scenes.navigate("main");
+    Scenes.add("main", new SceneMain());
+    Scenes.navigate("main");
 
-Lunanore.run();
+    Lunanore.run();
+});
+
+window.addEventListener("resize", () => {
+    Lunanore.resize(innerWidth, innerHeight);
+});

@@ -1,21 +1,15 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "serve": "cd src && npx vite",
-    "build": "cd src && npx vite build"
-  },
-  "author": "",
+  "author": "Ruben Labruyere",
   "license": "ISC",
-  "description": "",
+  "description": "The portfolio website of Ruben Labruyere",
   "devDependencies": {
-    "@types/three": "^0.178.1",
     "typescript": "^5.5.4",
     "vite": "^5.3.5"
   },
   "dependencies": {
-    "lunanore": "^0.6.1"
+    "aquanore": "^3.4.0"
   }
 }

@@ -8,4 +8,4 @@ COPY ./dist/ /app/
 
 # Serve the website
 WORKDIR /app/
-ENTRYPOINT http-server -p 80 -c-1
+ENTRYPOINT ["http-server","-p", "80","-c","-1"]

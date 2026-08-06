@@ -1,11 +1,15 @@
+FROM node AS build
+
+# Build
+COPY . /build/
+
+WORKDIR /build
+RUN npm i
+RUN npx vite build
+
+# Run
 FROM node AS base
-
-# Install deps
-RUN npm install -g http-server
-
-# Copy the source files
-COPY ./dist/ /app/
-
-# Serve the website
+COPY --from=build /build/dist /app/
+RUN npm i -g http-server
 WORKDIR /app/
-ENTRYPOINT ["http-server","-p", "80","-c","-1"]
+ENTRYPOINT ["http-server","-p","80","-c-1"]

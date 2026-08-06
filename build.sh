@@ -1,2 +1,1 @@
-cd src
-npx vite build
+docker build -t "ghcr.io/thebonejarmer/portfolio" .
